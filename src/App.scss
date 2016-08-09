@@ -1,0 +1,32 @@
+.App {
+
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  
+  .about-me-snippet {
+    color: white;
+    font-size: 2em;
+    width: 40%;
+    
+    .tidbit-line {
+      color: #7bc5f3;
+      
+      .tidbit {
+        text-decoration: underline;
+        transition: color .5s;
+        
+        &:hover {
+          cursor: pointer;
+          color: #0d90e2;
+          transition: color .5s;
+        }
+      }
+    }
+  }
+}
+
