@@ -11,27 +11,27 @@
 
  body .App .about-me-snippet {
     width: 60%;
-    font-size: 1.5em;
-    
+    font-size: 12px;
   }
 }
 
 .App {
-
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jura', sans-serif;
   
   .about-me-snippet {
     color: white;
-    font-size: 2em;
-    width: 40%;
-    margin-top: -100px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+      .terminal-line {
+        color: #7bc5f3;
+        
+        &::before {
+          content: "> ";
+        }
+      }
+        
     .tidbit-line {
       color: #7bc5f3;
       
@@ -44,6 +44,7 @@
           color: #0d90e2;
           transition: color .5s;
         }
+        
       }
     }
   }
