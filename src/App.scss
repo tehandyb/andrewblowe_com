@@ -1,28 +1,39 @@
-@media (max-width: 480px) {
 
- body .App .about-me-snippet {
-    width: 60%;
-    font-size: 1em !important;
-    margin-top: 0px;
-  }
-}
 
 @media (max-width: 1024px) {
 
  body .App .about-me-snippet {
-    width: 60%;
-    font-size: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+ body .App .about-me-snippet {
+    font-size: .8rem;
+    margin-top: 0px;
   }
 }
 
 .App {
   font-family: 'Jura', sans-serif;
+  color: white;
+  height: 100%;
+  width: 100%;
+  
+  .center-text {
+    text-align: center;
+  }
   
   .about-me-snippet {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    width: 50%;
+    margin: auto;
+    text-align: center;
     color: white;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 1.2em;
     
       .terminal-line {
         color: #7bc5f3;
@@ -45,6 +56,40 @@
           transition: color .5s;
         }
         
+      }
+    }
+    
+    .btn {
+      font-size: 1rem;
+      transition: background .5s;
+      cursor: pointer;
+    }
+    
+    .go-btn {
+      border-radius: 50px;
+      display: inline-block;
+      background: #d8453b;
+      padding: 10px 25px;
+      width: 120px;
+      text-align: center;
+      margin-top: 20px;
+      
+      &:hover {
+        background: #e32114;
+      }
+    }
+    
+    .back-btn {
+      border-radius: 50px;
+      display: inline-block;
+      background: #3b7fd8;
+      padding: 10px 25px;
+      width: 120px;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 10px;
+      &:hover {
+        background: #006eff;
       }
     }
   }

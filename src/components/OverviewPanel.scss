@@ -1,0 +1,15 @@
+
+.overview-panel {
+  margin: auto;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+}
